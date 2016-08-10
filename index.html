@@ -45,22 +45,48 @@
 </head>
 
 <body>
-	<section class="sixteen colgrid">
-		<div class="row menu">
-			<div class="six columns">
-				<p id="about">About</p>
-			</div>
-			<div class="four columns">
-			</div>
-			<div class="six columns">
-				<p id="contact">Contact</p>
-			</div>
-		</div>
-		<div>
-				<p id="name">Masaki Ando</h3>
-		</div>
-		<div id="logodiv">
-			<img src="img/crystal.png" id="logoback">
+	<section class="sixteen colgrid"> <!-- gridでいるやつ -->
+		<div id="container"> <!-- ページごとスクロールでいる -->
+			<section id="stage1" class="stagebase">
+				<div class="fieldwrap">
+					<div class="row menu"> <!-- グリッドの横方向の塊 -->
+						<div class="six columns">
+							<p id="about">About</p>
+						</div>
+						<div class="four columns">
+							<div id="logodiv" class="centerd">
+						<a href="#"><img src="img/noji.jpg" id="logoback" class="hoverwhite"></a>
+					</div>
+						</div>
+						<div class="six columns">
+							<p id="contact">Contact</p>
+						</div>
+					</div>
+					<div>
+							<p id="name">Masaki Ando</h3>
+					</div>
+				</div>
+			</section>
+			<section id="stage2" class="stagebase">
+				<div class="fieldwrap">
+					<div class="zone" id="zone1">
+						<div class="row">
+							<div class="eight columns">
+								<h3 class="worktitle" id="wktl1">Yumejuya Poster</h3>
+								<h4 class="worksub" id="wksb1">夢十夜 ポスター|学校課題</h3>
+								<p class="caption" id="caption1">
+									夏目漱石「夢十夜」その中でも、第一夜を主題に演劇を開くと仮定した演劇ポスター。<br>
+									本来ならばポスターとして有効なイラストレーションを学ぶ課題だが、文字組ばかりに拘ったため、イラストレーションを最小限にとどめることで逆に一点集中のインパクトを与えた。<br>
+									夢十夜は新聞に掲載されていた小説なので、モリサワの毎日新聞明朝を使用。日付、劇場などの情報の文字組に時間を費やし、きっちりと整理整頓された美しさを表現した。
+								</p>
+							</div>
+							<div class="eight columns">
+								<img src="img/work1.jpg" class="workimg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</section>
 	

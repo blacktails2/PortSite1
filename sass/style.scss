@@ -5,13 +5,23 @@
 }
 body{
 	background-color: black;
+	font-family:  "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 .menu div p{
-	margin-top: 55px;
+	margin-top: 60px;
 	font-size: 30px;
-	font-family: Helvetica neue;
+	font-family: "Helvetica Neue";
 	font-weight: 200;
 	color: #CCC;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	&:hover{
+		color: white;
+		
+	}
+}
+#logodiv{
+	margin-top: 20px;
 }
 #about{
 	border-right: solid 1px gray;
@@ -23,8 +33,15 @@ body{
 	padding-left: 5%;
 	text-align: left;
 }
+.centerd{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
 #logoback{
-	width: 100%;
+	background-color: white;
+	width: 60%;
 	-webkit-mask-image: url(../img/logo.svg);
 	mask-image: url(../img/logo.svg);
 	-webkit-mask-mode: alpha;
@@ -33,19 +50,63 @@ body{
 	mask-repeat: no-repeat;
 	-webkit-mask-size: 100%;
 	mask-size: 100%;
+	-webkit-mask-position:center;
+	mask-position:center;
 }
-// #logo{
-// 	display: block;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	width: 150px;
-// }
+.hoverwhite{
+	transition: all 0.5s ease;
+	&:hover{
+		opacity: 0.5;
+		filter: alpha(opacify=50);
+		-ms-filter: alpha(opacify=50);
+	}
+}
 #name{
 	font-size: 30px;
-	margin-top: 20px;
+	margin-top: 15px;
 	text-align: center;
-	font-family: "FuturaL";
+	font-family: "Futura";
 	color: white;
 	font-style: italic;
 	letter-spacing: 5px;
+}
+.zone{
+	width: 100%;
+}
+#zone1{
+	background-image: url(../img/noji.jpg);
+  	height: auto;
+}
+.worktitle{
+	margin: 60px 20px 0px 20px;
+	font-family: Futura;
+	font-size: 30px;
+	letter-spacing:3px;
+	border-bottom: 2px solid white;
+	color: white;
+}
+.worksub{
+	margin: 0 20px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+.caption{
+	padding: 5px;
+	margin: 25px 20px;
+	vertical-align: middle;
+	color: black;
+	font-size: 14px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6 );
+	text-align: justify;
+}
+.workimg{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #CCC;
+}
+#caption1{
+	margin: 65px 20px 25px 150px;
 }
