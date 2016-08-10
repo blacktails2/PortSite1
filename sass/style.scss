@@ -23,7 +23,7 @@ body{
 	overflow: hidden;
 }
 .stageBase .fieldWrap{
-	padding: 100px 0 0 0;
+	padding: 50px 0 0 0;
 }
 #pageNav {
     top: 0;
@@ -74,20 +74,21 @@ body{
     display: block;
 }
 .menu div p{
-	margin-top: 60px;
+	margin-top: 40px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
 	color: #CCC;
 	transition: all 0.5s ease;
 	cursor: pointer;
+	z-index: 3;
 	&:hover{
 		color: white;
 		
 	}
 }
 #logodiv{
-	margin-top: 20px;
+	margin-top: 0px;
 }
 #about{
 	border-right: solid 1px gray;
@@ -106,8 +107,11 @@ body{
 	text-align: center;
 }
 #logoback{
+	transform-origin: top center;
+	transform: scale(5);
 	background-color: white;
 	width: 60%;
+	z-index: 0;
 	-webkit-mask-image: url(../img/logo.svg);
 	mask-image: url(../img/logo.svg);
 	-webkit-mask-mode: alpha;
@@ -135,6 +139,7 @@ body{
 	color: white;
 	font-style: italic;
 	letter-spacing: 5px;
+	z-index: 2;
 }
 .zone{
 	width: 100%;

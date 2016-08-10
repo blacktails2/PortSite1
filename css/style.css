@@ -6,7 +6,7 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 .stageBase { width: 100%; position: relative; overflow: hidden; }
 
-.stageBase .fieldWrap { padding: 100px 0 0 0; }
+.stageBase .fieldWrap { padding: 50px 0 0 0; }
 
 #pageNav { top: 0; right: 25px; width: 15px; text-align: center; position: fixed; z-index: 2; }
 
@@ -24,10 +24,10 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 #pageDown a { margin: 0 auto; width: 30px; height: 30px; background: transparent url(../img/next_arw.png) no-repeat center center; display: block; }
 
-.menu div p { margin-top: 60px; font-size: 30px; font-family: "Helvetica Neue"; font-weight: 200; color: #CCC; transition: all 0.5s ease; cursor: pointer; }
+.menu div p { margin-top: 40px; font-size: 30px; font-family: "Helvetica Neue"; font-weight: 200; color: #CCC; transition: all 0.5s ease; cursor: pointer; z-index: 3; }
 .menu div p:hover { color: white; }
 
-#logodiv { margin-top: 20px; }
+#logodiv { margin-top: 0px; }
 
 #about { border-right: solid 1px gray; padding-right: 5%; text-align: right; }
 
@@ -35,12 +35,12 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 .centerd { display: block; margin-right: auto; margin-left: auto; text-align: center; }
 
-#logoback { background-color: white; width: 60%; -webkit-mask-image: url(../img/logo.svg); mask-image: url(../img/logo.svg); -webkit-mask-mode: alpha; mask-mode: alpha; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 100%; mask-size: 100%; -webkit-mask-position: center; mask-position: center; }
+#logoback { transform-origin: top center; transform: scale(5); background-color: white; width: 60%; z-index: 0; -webkit-mask-image: url(../img/logo.svg); mask-image: url(../img/logo.svg); -webkit-mask-mode: alpha; mask-mode: alpha; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 100%; mask-size: 100%; -webkit-mask-position: center; mask-position: center; }
 
 .hoverwhite { transition: all 0.5s ease; }
 .hoverwhite:hover { opacity: 0.5; filter: alpha(opacify=50); -ms-filter: alpha(opacify=50); }
 
-#name { font-size: 30px; margin-top: 15px; text-align: center; font-family: "Futura"; color: white; font-style: italic; letter-spacing: 5px; }
+#name { font-size: 30px; margin-top: 15px; text-align: center; font-family: "Futura"; color: white; font-style: italic; letter-spacing: 5px; z-index: 2; }
 
 .zone { width: 100%; }
 
