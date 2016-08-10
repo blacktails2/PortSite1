@@ -1,0 +1,48 @@
+@charset "utf-8";
+body{
+	background-color: black;
+}
+.menu div p{
+	margin-top: 55px;
+	font-size: 30px;
+	font-family: Helvetica neue;
+	font-weight: 200;
+	color: #CCC;
+}
+#about{
+	border-right: solid 1px gray;
+	padding-right: 5%;
+	text-align: right;
+}
+#contact{
+	border-left: solid 1px gray;
+	padding-left: 5%;
+	text-align: left;
+}
+#logoback{
+	width: 100%;
+	-webkit-mask-image: url(../img/logo.svg);
+	mask-image: url(../img/logo.svg);
+	-webkit-mask-mode: alpha;
+	mask-mode: alpha;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 100%;
+	mask-size: 100%;
+}
+// #logo{
+// 	display: block;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	width: 150px;
+// }
+#name{
+	font-size: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font-family: futura BT;
+	font-weight: light;
+	color: white;
+	font-style: italic;
+	letter-spacing: 5px;
+}
