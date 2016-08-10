@@ -4,8 +4,74 @@
 	src: url(FuturaBTLight.ttf)
 }
 body{
+	position: relative;
+	overflow: hidden;
+	visibility: hidden;
 	background-color: black;
 	font-family:  "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+#container{
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.stageBase{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.stageBase .fieldWrap{
+	padding: 100px 0 0 0;
+}
+#pageNav {
+    top: 0;
+    right: 25px;
+    width: 15px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+}
+#pageNav ul {
+    width: 15px;
+    display: block;
+}
+#pageNav ul li {
+    padding-bottom: 5px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    overflow: hidden;
+}
+#pageNav ul li a {
+    width: 15px;
+    height: 15px;
+    background: transparent url(../img/nav.png) no-repeat center center;
+    display: block;
+}
+#pageNav ul li.activeStage a {
+    background: transparent url(../img/nav_acv.png) no-repeat center center;
+}
+ 
+/* #pageDown
+--------------------------- */
+#pageDown {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3;
+}
+#pageDown a {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: transparent url(../img/next_arw.png) no-repeat center center;
+    display: block;
 }
 .menu div p{
 	margin-top: 60px;
@@ -94,7 +160,6 @@ body{
 }
 .caption{
 	margin: 25px 20px;
-	vertical-align: middle;
 	color: black;
 	font-size: 14px;
 	color: white;
@@ -104,9 +169,18 @@ body{
 .workimg{
 	margin-top: 25px;
 	margin-bottom: 25px;
-	border: 1px solid #CCC;
 }
 #caption1{
-	margin: 45px 20px 25px 70px;
-	padding: 10px 10px 40px 80px;
+	margin: 15% 20px 0 15%;
+	padding: 2% 2% 15% 15%;
+}
+#category1{
+	position: relative;
+	font-size: 120px;
+	font-family: "Avenir next";
+	font-weight: 200;
+	color: gray;
+	opacity: 0.5;
+	bottom: 150px;
+	margin-left: 100px;
 }
