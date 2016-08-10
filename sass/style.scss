@@ -74,6 +74,7 @@ body{
     display: block;
 }
 .menu div p{
+	position: relative;
 	margin-top: 40px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
@@ -91,14 +92,12 @@ body{
 	margin-top: 0px;
 }
 #about{
-	border-right: solid 1px gray;
 	padding-right: 5%;
-	text-align: right;
+	text-align: center;
 }
 #contact{
-	border-left: solid 1px gray;
 	padding-left: 5%;
-	text-align: left;
+	text-align: center;
 }
 .centerd{
 	display: block;
@@ -107,6 +106,7 @@ body{
 	text-align: center;
 }
 #logoback{
+	position: relative;
 	transform-origin: top center;
 	transform: scale(5);
 	background-color: white;
@@ -133,13 +133,14 @@ body{
 }
 #name{
 	font-size: 30px;
-	margin-top: 15px;
+	margin-top: 20%;
 	text-align: center;
 	font-family: "Futura";
 	color: white;
 	font-style: italic;
 	letter-spacing: 5px;
 	z-index: 2;
+	position: relative;
 }
 .zone{
 	width: 100%;
