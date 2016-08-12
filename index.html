@@ -198,7 +198,6 @@ $(function(){
     slideSpeed = 500,
     slideEasing = 'linear',
     downBtn = 'show', // 'show' or 'hide'
-    upBtn = 'show', // 'show' or 'hide'
     urlHash = 'on', // 'on' or 'off'
     setHash = '!page';
  
@@ -212,9 +211,6 @@ $(function(){
  
     if(downBtn == 'show'){
         setWrap.append('<div id="pageDown"><a href="javascript:void(0);"></a></div>');
-    }
-    if(upBtn == 'show'){
-        setWrap.append('<div id="pageUp"><a href="javascript:void(0);"></a></div>');
     }
  
     var coreNav = $('#pageNav'),
@@ -425,9 +421,6 @@ $(function(){
                 if(downBtn == 'show'){
                     pagePos();
                 }
-                if(upBtn == 'show'){
-                    pagePos();
-                }
             }
             if(urlHash == 'on'){
                 replaceHash();
@@ -454,9 +447,6 @@ $(function(){
                 if(downBtn == 'show'){
                     pagePos();
                 }
-                if(upBtn == 'show'){
-                    pagePos();
-                }
             }
             if(urlHash == 'on'){
                 replaceHash();
@@ -475,9 +465,6 @@ $(function(){
                 $('body').attr('data-page',crtIndex+1);
  
                 if(downBtn == 'show'){
-                    pagePos();
-                }
-                if(upBtn == 'show'){
                     pagePos();
                 }
                 if(urlHash == 'on'){
@@ -511,34 +498,6 @@ $(function(){
                     $('#pageDown').css({display:'none'});
                 } else {
                     $('#pageDown').css({display:'block'});
-                }
-            });
-        }
-        // PageUpBtnClick
-        $('#pageUp a').click(function(){
-            if(!(setWrap.is(':animated'))){
-                var navActive = setNav.find('li.activeStage');
-                navActive.each(function(){
-                    var navIndex = navList.index(this),
-                    setNav = navIndex-1;
-                    if(!(setNav == navLength)){
-                        $(this).next().click();
-                    }
-                });
-                if(urlHash == 'on'){
-                    replaceHash();
-                }
-            }
-        });
-        function pagePos(){
-            var pnAcv = coreNav.find('li.activeStage');
-            pnAcv.each(function(){
-                var pnIndexN = navList.index(this),
-                pnCountN = pnIndexN-1;
-                if(pnCountN == navLength){
-                    $('#pageUp').css({display:'none'});
-                } else {
-                    $('#pageUp').css({display:'block'});
                 }
             });
         }
