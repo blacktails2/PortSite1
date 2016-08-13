@@ -47,9 +47,9 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 .zone { width: 100%; }
 
-#zone1 { background-image: url(../img/noji.jpg); height: auto; }
+#zone1 { background-image: url(../img/background/b70.JPG); height: auto; background-position: center; }
 
-#zone2 { background-image: url(../img/niku.jpg); height: auto; }
+#zone2 { background-image: url(../img/background/b80.JPG); height: auto; background-position: center; }
 
 .worktitle { font-family: Futura; color: white; }
 
