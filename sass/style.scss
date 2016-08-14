@@ -1,4 +1,5 @@
 @charset "utf-8";
+$fivewhite: rgba(255, 255, 255, 0.5);
 @font-face{
 	font-family: "FuturaL";
 	src: url(FuturaBTLight.ttf)
@@ -24,6 +25,99 @@ body{
 }
 .stageBase .fieldWrap{
 	padding: 50px 0 0 0;
+	text-align: center;
+}
+/* .stageSlide
+--------------------------- */
+.stageSlide {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+.stageSlide .slideWrap {
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.stageSlide .slideWrap:before,
+.stageSlide .slideWrap:after {
+    content: " ";
+    display: table;
+}
+.stageSlide .slideWrap:after {clear: both;}
+.stageSlide .slideWrap {*zoom: 1;}
+ 
+.stageSlide .slidePanel {
+    float: left;
+    overflow: hidden;
+}
+ 
+.stageSlide .sdPrev,
+.stageSlide .sdNext {
+    margin-top: -25px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    z-index: 99;
+    transform: rotate(45deg);
+}
+.stageSlide .sdPrev {
+    left: 80px;
+    border-left: solid 2px $fivewhite;
+    border-bottom: solid 2px $fivewhite;
+    transition: all 0.2s ease;
+    &:hover{
+    	border-left: solid 2px white;
+    	border-bottom: solid 2px white;
+    }
+    &:active{
+    	border-left: solid 2px rgba(255, 255, 255, 0.2);
+    	border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+    }
+}
+.stageSlide .sdNext {
+    right: 80px;
+    border-right: solid 2px $fivewhite;
+    border-top: solid 2px $fivewhite;
+    transition: all 0.2s ease;
+    &:hover{
+    	border-right: solid 2px white;
+    	border-top: solid 2px white;
+    }
+    &:active{
+    	border-right: solid 2px rgba(255, 255, 255, 0.2);
+    	border-top: solid 2px rgba(255, 255, 255, 0.2);
+    }
+}
+ 
+.stageSlide .slideNav {
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    position: absolute;
+    z-index: 98;
+}
+.stageSlide .slideNav a {
+    margin: 0 5px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid $fivewhite;
+    border-radius: 4px;
+    display: inline-block;
+    overflow: hidden;
+    transition: all ease 0.2s;
+    &:hover{
+    	background-color: $fivewhite;
+    }
+}
+.stageSlide .slideNav a.pnActive {
+    background-color: white;
+    opacity: 1;
 }
 #pageNav {
     top: 0;
@@ -47,12 +141,12 @@ body{
 #pageNav ul li a {
     width: 10px;
     height: 10px;
-    border: solid 1.5px rgba(255, 255, 255, 0.5);
+    border: solid 1.5px $fivewhite;
     display: block;
     border-radius: 50%;
     transition: all 0.3s ease;
     &:hover{
-    	background-color: rgba(255, 255, 255, 0.5);
+    	background-color: $fivewhite;
     }
 }
 #pageNav ul li.activeStage a {
@@ -125,7 +219,7 @@ body{
 #logoback{
 	position: relative;
 	transform-origin: top center;
-	transform: scale(5);
+	transform: scale(3.25);
 	background-color: white;
 	width: 60%;
 	z-index: 0;
@@ -166,6 +260,11 @@ body{
 	background-image: url(../img/background/b70.JPG);
   	height: auto;
   	background-position: center;
+}
+#zone1-1{
+	background-image: url(../img/background/b42.JPG);
+	height: auto;
+	background-position: center;
 }
 #zone2{
 	background-image: url(../img/background/b80.JPG);
@@ -236,4 +335,10 @@ body{
 	opacity: 1;
 	right: 0;
 	bottom: 10%;
+}
+.subtitle{
+	color: white;
+	font-family: "helvetica neue", "catull", "corbel", sans-serif;
+	font-weight: 100;
+	border-bottom: 1px solid white;
 }

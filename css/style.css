@@ -6,7 +6,38 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 .stageBase { width: 100%; position: relative; overflow: hidden; }
 
-.stageBase .fieldWrap { padding: 50px 0 0 0; }
+.stageBase .fieldWrap { padding: 50px 0 0 0; text-align: center; }
+
+/* .stageSlide
+--------------------------- */
+.stageSlide { position: relative; overflow: hidden; visibility: hidden; }
+
+.stageSlide .slideWrap { top: 0; left: 0; position: absolute; overflow: hidden; }
+
+.stageSlide .slideWrap:before, .stageSlide .slideWrap:after { content: " "; display: table; }
+
+.stageSlide .slideWrap:after { clear: both; }
+
+.stageSlide .slideWrap { *zoom: 1; }
+
+.stageSlide .slidePanel { float: left; overflow: hidden; }
+
+.stageSlide .sdPrev, .stageSlide .sdNext { margin-top: -25px; top: 50%; width: 20px; height: 20px; display: block; position: absolute; z-index: 99; transform: rotate(45deg); }
+
+.stageSlide .sdPrev { left: 80px; border-left: solid 2px rgba(255, 255, 255, 0.5); border-bottom: solid 2px rgba(255, 255, 255, 0.5); transition: all 0.2s ease; }
+.stageSlide .sdPrev:hover { border-left: solid 2px white; border-bottom: solid 2px white; }
+.stageSlide .sdPrev:active { border-left: solid 2px rgba(255, 255, 255, 0.2); border-bottom: solid 2px rgba(255, 255, 255, 0.2); }
+
+.stageSlide .sdNext { right: 80px; border-right: solid 2px rgba(255, 255, 255, 0.5); border-top: solid 2px rgba(255, 255, 255, 0.5); transition: all 0.2s ease; }
+.stageSlide .sdNext:hover { border-right: solid 2px white; border-top: solid 2px white; }
+.stageSlide .sdNext:active { border-right: solid 2px rgba(255, 255, 255, 0.2); border-top: solid 2px rgba(255, 255, 255, 0.2); }
+
+.stageSlide .slideNav { bottom: 70px; left: 0; width: 100%; height: 15px; text-align: center; position: absolute; z-index: 98; }
+
+.stageSlide .slideNav a { margin: 0 5px; width: 13px; height: 13px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 4px; display: inline-block; overflow: hidden; transition: all ease 0.2s; }
+.stageSlide .slideNav a:hover { background-color: rgba(255, 255, 255, 0.5); }
+
+.stageSlide .slideNav a.pnActive { background-color: white; opacity: 1; }
 
 #pageNav { top: 0; right: 25px; width: 15px; text-align: center; position: fixed; z-index: 2; }
 
@@ -38,7 +69,7 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 
 .centerd { display: block; margin-right: auto; margin-left: auto; text-align: center; }
 
-#logoback { position: relative; transform-origin: top center; transform: scale(5); background-color: white; width: 60%; z-index: 0; -webkit-mask-image: url(../img/logo.svg); mask-image: url(../img/logo.svg); -webkit-mask-mode: alpha; mask-mode: alpha; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 100%; mask-size: 100%; -webkit-mask-position: center; mask-position: center; }
+#logoback { position: relative; transform-origin: top center; transform: scale(3.25); background-color: white; width: 60%; z-index: 0; -webkit-mask-image: url(../img/logo.svg); mask-image: url(../img/logo.svg); -webkit-mask-mode: alpha; mask-mode: alpha; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 100%; mask-size: 100%; -webkit-mask-position: center; mask-position: center; }
 
 .hoverwhite { transition: all 0.5s ease; }
 .hoverwhite:hover { opacity: 0.5; filter: alpha(opacify=50); -ms-filter: alpha(opacify=50); }
@@ -48,6 +79,8 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 .zone { width: 100%; }
 
 #zone1 { background-image: url(../img/background/b70.JPG); height: auto; background-position: center; }
+
+#zone1-1 { background-image: url(../img/background/b42.JPG); height: auto; background-position: center; }
 
 #zone2 { background-image: url(../img/background/b80.JPG); height: auto; background-position: center; }
 
@@ -70,3 +103,5 @@ body { position: relative; overflow: hidden; visibility: hidden; background-colo
 #category1 { position: relative; font-size: 120px; font-family: "Avenir next"; font-weight: 200; color: gray; opacity: 0.5; bottom: 150px; margin-left: 100px; }
 
 #category2 { position: absolute; font-size: 70px; font-family: "Garamond"; font-weight: 200; color: white; opacity: 1; right: 0; bottom: 10%; }
+
+.subtitle { color: white; font-family: "helvetica neue", "catull", "corbel", sans-serif; font-weight: 100; border-bottom: 1px solid white; }
